@@ -148,12 +148,6 @@ If I were to do this, first I would figure out if there is already any angular t
 **Original README**
 ===================
 
-
-# JS Complexity
-
-This project is an engineering candidate javascript exercise used by
-ExecThread as part of it's enginerring team's interviewing process.
-
 ## Getting Started
 
 To get you started you can simply clone the repository and install the dependencies:
