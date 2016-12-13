@@ -1,0 +1,21 @@
+<div ng-controller="mainViewCtrl">
+  <form novalidate class="simple-form editor">
+    <textarea ng-model="jsCode" placeholder="Paste your code here"></textarea>
+  </form>
+  <div class="console">
+	  <div class="header">
+	  	<img class="logo" src="assets/logo.png"/>
+	    <h6>&mdash; Version <span app-version></span> &mdash;</h6>
+	  </div>
+	  <div class="input-group">
+	  	<b>Advanced Options:</b><br>
+		  <label><input type="checkbox" id="opt-details">View Detailed Report</label>
+		  <label><input type="checkbox" id="opt-esprima" checked>Use Esprima Syntax Parser</label>
+			<input type="submit" ng-click="checkJSCode(jsCode)" value="Check Code" />
+	  </div>
+		<div class="result">
+			<div class="detailed-report" ng-bind-html="detailedReport"></div>
+			<h3>Complexity: <span id="checkResult">{{checkResult}}</span></h3>
+		</div>
+  </div>
+</div>
